@@ -10,7 +10,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 public class MyTextView extends View{
@@ -136,13 +135,11 @@ public class MyTextView extends View{
             super.handleMessage(msg);
             switch(msg.what){
                 case update_color_first:
-                    Log.i(TAG,"update_color_first:update_color_first");
                     color_type = update_color_first;
                     invalidate();
                     myHandler.sendEmptyMessageDelayed(update_color_second, flash_time);
                     break;
                 case update_color_second:
-                    Log.i(TAG,"update_color_second:update_color_second");
                     color_type = update_color_second;
                     invalidate();
                     myHandler.sendEmptyMessageDelayed(update_color_first, flash_time);
