@@ -4,7 +4,7 @@
 
 #显示效果
 
-
+![Image text](custom_text_view.gif)
 
 
 #使用方法
