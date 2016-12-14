@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="MyTextView">
+        <attr name="firstTitle" format="string"/>
+        <attr name="secondTitle" format="string"/>
+        <attr name="firstTitleSize" format="dimension"/>
+        <attr name="secondTitleSize" format="dimension"/>
+        <attr name="firstColor" format="color"/>
+        <attr name="secondColor" format="color"/>
+        <attr name="backDrawable" format="color|reference"/>
+    </declare-styleable>
+</resources>

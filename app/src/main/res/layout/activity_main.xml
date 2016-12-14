@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/android.com.customertextview"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.com.customertextview.MainActivity">
+
+    <android.com.customertextview.MyTextView
+        android:id="@+id/firestTV"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:paddingBottom="40dp"
+        app:firstColor="#ff33e5"
+        app:secondColor="#000000"
+        app:firstTitleSize="50sp"
+        app:secondTitleSize="30sp"
+        app:firstTitle="MyTextView"
+        app:secondTitle="second title"/>
+
+    <android.com.customertextview.MyTextView
+        android:id="@+id/secondTV"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/firestTV"
+        android:background="@drawable/ticket_intercity_gray_bg"
+        android:paddingBottom="40dp"
+        app:firstColor="#ffffff"
+        app:secondColor="#000000"
+        app:firstTitleSize="50sp"
+        app:secondTitleSize="30sp"
+        app:firstTitle="MyTextView"
+        app:secondTitle="second title"/>
+</RelativeLayout>
