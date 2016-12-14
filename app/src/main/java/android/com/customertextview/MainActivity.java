@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         myTextView01 = (MyTextView)findViewById(R.id.firestTV);
         myTextView01.setBackground(getResources().getDrawable(R.drawable.ticket_intercity_light_bg));
+        myTextView01.setFirstTitle(getResources().getString(R.string.bus_name));
+        myTextView01.setSecondTitle(getResources().getString(R.string.warmly_hint));
+        myTextView01.setSecondTitleSize(20);
         myTextView01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

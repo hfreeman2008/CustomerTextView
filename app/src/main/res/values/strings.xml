@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CustomerTextView</string>
+    <string name="bus_name">粤BAK911</string>
+    <string name="warmly_hint">温馨提示：请提前到达车站，等待汽车，谢谢！！</string>
 </resources>
